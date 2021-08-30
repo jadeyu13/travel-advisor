@@ -15,7 +15,7 @@ function List( {places }) {
             <Typography variant="h4">
                 Restaurant, Hotels & Attractions around you
                 <FormControl className={classes.formcontrol}>
-                    <InputLabel>Type</InputLabel>
+                    <InputLabel id="type">Type</InputLabel>
 
                     <Select value={type} onChange={(e) => setType(e.target.value)}>
                         <MenuItem value="restaurants">Restaurant</MenuItem>
@@ -25,9 +25,9 @@ function List( {places }) {
                 </FormControl>
 
                 <FormControl className={classes.formcontrol}>
-                    <InputLabel>Rating</InputLabel>
+                    <InputLabel id="rating">Rating</InputLabel>
 
-                    <Select value={rating} onChange={(e) => setRating(e.target.value)}>
+                    <Select id="rating" value={rating} onChange={(e) => setRating(e.target.value)}>
                         <MenuItem value={0}>All</MenuItem>
                         <MenuItem value={3}>Above 3.0 </MenuItem>
                         <MenuItem value={4}>Above 4.0</MenuItem>
